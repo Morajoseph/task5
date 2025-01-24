@@ -138,13 +138,16 @@ font-size: 16px;
 }
 
 @media (max-width:768px){
-   body{
+    /* body{
         overflow-x: hidden;
-    }
+    } */
     .container{
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow-x: hidden;
+        width: 100%;
+     
     }
     .container .containt:nth-child(1){
         order: 2;
@@ -153,7 +156,7 @@ font-size: 16px;
         order: 1;
     }
      .container .containt .container-navbar{
-        width:200px;
+        width:100%;
         height: 400px;
         position: relative;
         top: 0;
@@ -184,14 +187,14 @@ font-size: 16px;
    .container .containt .image{
             /* position: relative; */
         /* max-width: 800px; */
-        width: 650px;
+        width: 100%;
         height: 220px;
         /* right: -52%; */
-        left: 10%;
+        left: 30%;
         top: 26%;
         z-index: 5;
 
-   
+   overflow-x: hidden;
   
    }
   
