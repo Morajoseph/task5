@@ -1,0 +1,230 @@
+*/{
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+.container{
+    display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+   margin: 0;
+   padding: 0;
+}
+.containt{
+    width: 40%;
+    
+   
+}
+
+
+.container .containt .container-navbar{
+    width:700px;
+    height: 400px;
+    background-color: hsl(207, 33%, 95%);
+   
+    border-bottom-left-radius:50px ;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    
+    right: 0;
+   
+}
+
+.container .containt .image
+{
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    width: 70%;
+   height: 400px;
+
+}.containt .container-navbar .navbar ul li{ 
+    display: inline-block;
+}
+.navbar ul li a{
+    color: black;
+    font-size: 15px;
+    padding: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* font-weight: bold; */
+}
+.navbar .active a{
+    margin-left: 20px;
+    color:  hsl(231, 7%, 65%);
+    text-decoration: underline;
+}
+
+.navbar ul li a:hover{
+    text-decoration: underline;
+}
+.containt .container-navbar .navbar ul {
+   margin-top: 35px;
+   margin-left: 50px;
+   
+}
+.containt .container-navbar .navbar{
+   /* display: flex;
+   justify-content: center; */
+   padding-top: 20px;
+   
+}
+#icon{
+    display: none;
+}
+.containt #logo{
+    margin-bottom: 60px;
+    margin-top: 20px;
+    /* position: fixed; */
+}
+.containt .new{
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  
+}
+
+
+.containt #newbtn{
+    background-color: black;
+    color: white;
+border-radius: 20px;
+width: 50px;
+    height: 27px;
+
+}
+.containt .new p{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: hsl(231, 7%, 65%);
+    margin-left: 20px;
+}
+.containt h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.containt p{
+    color: hsl(231, 7%, 65%);
+font-size: 16px;
+/* padding: 10px 20px; */
+
+}
+
+.line{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+.line #btn2{
+    background-color: hsl(0, 100%, 68%);
+    color: white;
+    border: none;
+    font-size: 16px;
+    margin-right: 20px;
+    width: 179px;
+    height: 44px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+.line p{
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+@media (max-width:768px){
+    /* body{
+        overflow-x: hidden;
+    } */
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .containt:nth-child(1){
+        order: 2;
+    }
+    .container .containt:nth-child(2){
+        order: 1;
+    }
+     .container .containt .container-navbar{
+        width:200px;
+        height: 400px;
+        position: relative;
+        top: 0;
+        left: 60%;
+        
+    }
+     #logo{
+        position: fixed;
+        top: 20px;
+      left: 30px;
+        z-index: 10;
+    }
+    .line{
+       align-items: center;
+    }
+  
+    #div2{
+        width: 80%;
+       margin:auto ;
+       margin-top: 50px;
+    }
+    #div2 #btn2{
+        /* padding: 0px 10px; */
+    }
+    #div2 .line p{
+        letter-spacing: 2px;
+    }
+   .container .containt .image{
+            /* position: relative; */
+        /* max-width: 800px; */
+        width: 650px;
+        height: 220px;
+        /* right: -52%; */
+        left: 10%;
+        top: 26%;
+        z-index: 5;
+
+   
+  
+   }
+  
+   .navbar ul{
+    left: -34%;
+    position: relative;
+    top: 20px;
+    right: 19%;
+    background-color: white;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+   display: none;
+
+    flex-direction: colum;
+    z-index: 999;
+    border-radius: 10px;
+    box-shadow: 0 0 10px hsl(231, 7%, 65%);
+    border: 2px solid hsl(231, 7%, 65%);
+    justify-content: center;
+
+  
+   }
+   .navbar ul li{
+    padding: 15px;
+    text-align: center;
+   }
+   #icon{
+    display: block;
+    width: 20px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+   }
+}
